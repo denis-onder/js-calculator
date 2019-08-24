@@ -1,0 +1,24 @@
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#calculator_output {
+  height: 16px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+}
+
+.calculator_key {
+  width: 32px;
+  height: 32px;
+}
+
+#calculator_equals_key {
+  width: 100%;
+}

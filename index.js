@@ -5,7 +5,12 @@ const equalsKey = document.getElementById("calculator_equals_key");
 let state = [];
 
 function setValueToOutput(value = "") {
-  value === "" ? (output.innerHTML = "") : (output.innerHTML += value);
+  if (value === "") {
+    output.innerHTML = "";
+    state = [];
+  } else {
+    output.innerHTML += value;
+  }
 }
 
 function setOperator(operator) {
@@ -31,6 +36,8 @@ function calculate(num1, num2, operator) {
     case "/":
       return parseInt(num1) / parseInt(num2);
       break;
+    default:
+      setValueToOutput();
   }
 }
 

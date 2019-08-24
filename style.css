@@ -6,19 +6,31 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: rgb(105, 105, 105);
+}
+
+#calculator {
+  border-radius: 5px;
+  background-color: rgb(39, 39, 39);
+  padding: 1em;
 }
 
 #calculator_output {
-  height: 16px;
-  border: 1px solid black;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 5px;
   margin-bottom: 5px;
 }
 
 .calculator_key {
   width: 32px;
   height: 32px;
+  border-radius: 5px;
+  outline: none;
 }
 
 #calculator_equals_key {
   width: 100%;
+  border-radius: 5px;
+  outline: none;
 }
